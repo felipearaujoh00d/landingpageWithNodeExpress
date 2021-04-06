@@ -2,6 +2,9 @@
 
 Landingpage usando node + express + pug
 
+Reference-style: 
+![alt text][logo]
+
 [logo]: exemplo.png "Exemplo da landingpage"
 
 
