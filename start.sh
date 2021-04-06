@@ -3,7 +3,7 @@
 #source ./.envvars
 
 ## Executa em background
-docker-compose up -d web
+docker-compose up  web
 
 ## Em seguida ouve os arquivos scss
-exec ./watch-scss-files.sh
+#exec ./watch-scss-files.sh

@@ -9,7 +9,9 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm i -D browser-sync
+RUN npm install nodemon -g
+
+RUN npm install node-sass --save
 
 RUN npm install
 # If you are building your code for production
