@@ -32,3 +32,6 @@ Costumo utilizar o seguinte comando:
 ```
 $ docker stop $(docker ps -a -q)
 ```
+
+
+[logo]: terminal.png "terminal"
