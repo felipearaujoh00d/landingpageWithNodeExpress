@@ -1,0 +1,39 @@
+section.page-section(id="contact")
+    div.container
+        <!-- Contact Section Heading-->
+        h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+        <!-- Icon Divider-->
+        div.divider-custom
+            div.divider-custom-line
+            div.divider-custom-icon
+                i.fas.fa-star
+            div.divider-custom-line
+        <!-- Contact Section Form-->
+        div.row
+            div.col-lg-8.mx-auto
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                form(id="contactForm", name="sentMessage", novalidate="novalidate")
+                    div.control-group
+                        div.form-group.floating-label-form-group.controls.mb-0.pb-2
+                            label Name
+                            input.form-control(id="name", type="text", placeholder="Name", required="required", data-validation-required-message="Please enter your name.")
+                            p.help-block.text-danger
+                    div.control-group
+                        div.form-group.floating-label-form-group.controls.mb-0.pb-2
+                        label Email Address
+                        input.form-control(id="email", type="email", placeholder="Email Address", required="required", data-validation-required-message="Please enter your email address.")
+                        p.help-block.text-danger
+                    div.control-group
+                        div.form-group.floating-label-form-group.controls.mb-0.pb-2
+                        label Phone Number
+                        input.form-control(id="phone", type="tel", placeholder="Phone Number", required="required", data-validation-required-message="Please enter your phone number.")
+                        p.help-block.text-danger
+                    div.control-group
+                        div.form-group.floating-label-form-group.controls.mb-0.pb-2
+                        label Message
+                        textarea.form-control(id="message", rows="5", placeholder="Message", required="required", data-validation-required-message="Please enter a message.")
+                        p.help-block.text-danger
+                    br
+                    div(id="success")
+                    div.form-group
+                        button.btn.btn-primary.btn-xl(id="sendMessageButton", type="submit") Send
