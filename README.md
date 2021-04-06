@@ -24,7 +24,7 @@ Para iniciar os containers execute o seguinte comando:
 $ ./start.sh
 ```
 
-## Parando os container
+## Parar os container
 
 Costumo utilizar o seguinte comando:
 
