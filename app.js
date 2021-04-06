@@ -1,5 +1,4 @@
 const express = require('express');
-const routes = require('./routes/index');
 const path = require('path');
 
 const app = express();
@@ -9,7 +8,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.get('/', function (req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!' })
+    res.render('index')
 })
 
 app.use(express.static(__dirname + '/public'));
